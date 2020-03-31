@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">About me</string>
+    <string name="name">Kaustubh Odak</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">Hi, my name is Kaustubh.
+    \n\nI\'m currently pursuing my computer engineering degree at PICT.
+    \n\nIt\'s my second year at PICT.
+    \nI enjoy playing video games in my free time
+    \n\nMy favourite subject is computer graphics.
+    \nComputer graphics allows you to visualize your code.
+    \nThat is exactly what makes it so interesting.
+    \n\nI wish to visit underrated places across the world.
+    \n\nProbably with a certain special someone (wink wink).
+    \nThanks for reading this.\n\n</string>
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
+</resources>
