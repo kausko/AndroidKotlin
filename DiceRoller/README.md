@@ -1,20 +1,19 @@
-ViewModel and ViewModelFactory - Starter Code
-==================================
+Dice Roller - Solution Code
+===========================
+
+Code for Android Kotlin Fundamentals Codelab 1.2
 
 Introduction
 ------------
 
-This app is a two player game, GuessTheWord. It is a word guessing app you can play with one or more friends. To play, hold the device in landscape, facing away from you with your thumbs on the **Skip** and **Got It** buttons. Your friends can then give you clues to help you guess the word. If you get the word right, press **Got It**. If you're stuck, press **Skip**.
-
-Getting Started
----------------
-
-1. Download and run the app.
+DiceRoller demonstrates simple interactivity in an Android app.
+It contains one button that updates a text view with a random
+value between 1 and 6.
 
 License
 -------
 
-Copyright 2019 Google, Inc.
+Copyright 2018 Google, Inc.
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements.  See the NOTICE file distributed with this work for
@@ -30,4 +29,3 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
-
