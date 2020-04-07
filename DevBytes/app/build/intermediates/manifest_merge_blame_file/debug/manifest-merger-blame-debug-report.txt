@@ -1,0 +1,259 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (C) 2019 Google Inc.
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~     http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.devbyteviewer"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="28" />
+24-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml
+25
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:22:5-67
+26-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:22:22-64
+27    <uses-permission android:name="android.permission.WAKE_LOCK" />
+27-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:23:5-68
+27-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:23:22-65
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:24:5-79
+28-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:24:22-76
+29    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+29-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:25:5-81
+29-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:25:22-78
+30
+31    <application
+31-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:24:5-40:19
+32        android:name="com.example.android.devbyteviewer.DevByteApplication"
+32-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:25:9-43
+33        android:allowBackup="true"
+33-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:26:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.0.2] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\3494cb4e214098b02cbcbe7a076af412\core-1.0.2\AndroidManifest.xml:22:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+36-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:27:9-43
+37        android:label="@string/app_name"
+37-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:28:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:29:9-54
+39        android:supportsRtl="true"
+39-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:30:9-35
+40        android:testOnly="true"
+41        android:theme="@style/AppTheme" >
+41-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:31:9-40
+42        <activity android:name="com.example.android.devbyteviewer.ui.DevByteActivity" >
+42-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:33:9-39:20
+42-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:33:19-53
+43            <intent-filter>
+43-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:34:13-38:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:35:17-69
+44-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:35:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:37:17-77
+46-->D:\Android\DevBytes\app\src\main\AndroidManifest.xml:37:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <provider
+50-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:28:9-34:35
+51            android:name="androidx.work.impl.WorkManagerInitializer"
+51-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:29:13-69
+52            android:authorities="com.example.android.devbyteviewer.workmanager-init"
+52-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:30:13-68
+53            android:directBootAware="false"
+53-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:31:13-44
+54            android:exported="false"
+54-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:32:13-37
+55            android:multiprocess="true" />
+55-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:33:13-40
+56
+57        <service
+57-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:36:9-41:35
+58            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+58-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:37:13-88
+59            android:directBootAware="false"
+59-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:38:13-44
+60            android:enabled="@bool/enable_system_alarm_service_default"
+60-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:39:13-72
+61            android:exported="false" />
+61-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:40:13-37
+62        <service
+62-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:42:9-48:35
+63            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+63-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:43:13-84
+64            android:directBootAware="false"
+64-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:44:13-44
+65            android:enabled="@bool/enable_system_job_service_default"
+65-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:45:13-70
+66            android:exported="true"
+66-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:46:13-36
+67            android:permission="android.permission.BIND_JOB_SERVICE" />
+67-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:47:13-69
+68
+69        <receiver
+69-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:50:9-55:35
+70            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+70-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:51:13-88
+71            android:directBootAware="false"
+71-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:52:13-44
+72            android:enabled="true"
+72-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:53:13-35
+73            android:exported="false" />
+73-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:54:13-37
+74        <receiver
+74-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:56:9-66:20
+75            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+75-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:57:13-106
+76            android:directBootAware="false"
+76-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:58:13-44
+77            android:enabled="false"
+77-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:59:13-36
+78            android:exported="false" >
+78-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:60:13-37
+79            <intent-filter>
+79-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:62:13-65:29
+80                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+80-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:63:17-87
+80-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:63:25-84
+81                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+81-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:64:17-90
+81-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:64:25-87
+82            </intent-filter>
+83        </receiver>
+84        <receiver
+84-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:67:9-77:20
+85            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+85-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:68:13-104
+86            android:directBootAware="false"
+86-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:69:13-44
+87            android:enabled="false"
+87-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:70:13-36
+88            android:exported="false" >
+88-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:71:13-37
+89            <intent-filter>
+89-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:73:13-76:29
+90                <action android:name="android.intent.action.BATTERY_OKAY" />
+90-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:74:17-77
+90-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:74:25-74
+91                <action android:name="android.intent.action.BATTERY_LOW" />
+91-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:75:17-76
+91-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:75:25-73
+92            </intent-filter>
+93        </receiver>
+94        <receiver
+94-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:78:9-88:20
+95            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+95-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:79:13-104
+96            android:directBootAware="false"
+96-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:80:13-44
+97            android:enabled="false"
+97-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:81:13-36
+98            android:exported="false" >
+98-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:82:13-37
+99            <intent-filter>
+99-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:84:13-87:29
+100                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+100-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:85:17-83
+100-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:85:25-80
+101                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+101-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:86:17-82
+101-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:86:25-79
+102            </intent-filter>
+103        </receiver>
+104        <receiver
+104-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:89:9-98:20
+105            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+105-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:90:13-103
+106            android:directBootAware="false"
+106-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:91:13-44
+107            android:enabled="false"
+107-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:92:13-36
+108            android:exported="false" >
+108-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:93:13-37
+109            <intent-filter>
+109-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:95:13-97:29
+110                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+110-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:96:17-79
+110-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:96:25-76
+111            </intent-filter>
+112        </receiver>
+113        <receiver
+113-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:99:9-110:20
+114            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+114-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:100:13-88
+115            android:directBootAware="false"
+115-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:101:13-44
+116            android:enabled="false"
+116-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:102:13-36
+117            android:exported="false" >
+117-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:103:13-37
+118            <intent-filter>
+118-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:105:13-109:29
+119                <action android:name="android.intent.action.BOOT_COMPLETED" />
+119-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:106:17-79
+119-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:106:25-76
+120                <action android:name="android.intent.action.TIME_SET" />
+120-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:107:17-73
+120-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:107:25-70
+121                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+121-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:108:17-81
+121-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:108:25-78
+122            </intent-filter>
+123        </receiver>
+124        <receiver
+124-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:111:9-120:20
+125            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+125-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:112:13-99
+126            android:directBootAware="false"
+126-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:113:13-44
+127            android:enabled="@bool/enable_system_alarm_service_default"
+127-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:114:13-72
+128            android:exported="false" >
+128-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:115:13-37
+129            <intent-filter>
+129-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:117:13-119:29
+130                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+130-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:118:17-98
+130-->[androidx.work:work-runtime:2.0.0] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\98d1949f13521bee63647c96d86f5f96\work-runtime-2.0.0\AndroidManifest.xml:118:25-95
+131            </intent-filter>
+132        </receiver>
+133
+134        <service
+134-->[androidx.room:room-runtime:2.1.0-alpha06] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5aa68a7f66b6d0b30b7404efcc2e308a\room-runtime-2.1.0-alpha06\AndroidManifest.xml:23:9-25:40
+135            android:name="androidx.room.MultiInstanceInvalidationService"
+135-->[androidx.room:room-runtime:2.1.0-alpha06] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5aa68a7f66b6d0b30b7404efcc2e308a\room-runtime-2.1.0-alpha06\AndroidManifest.xml:24:13-74
+136            android:exported="false" />
+136-->[androidx.room:room-runtime:2.1.0-alpha06] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5aa68a7f66b6d0b30b7404efcc2e308a\room-runtime-2.1.0-alpha06\AndroidManifest.xml:25:13-37
+137
+138        <provider
+138-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5bb977e991c9880c023e1a358f05eaf5\jetified-lifecycle-process-2.2.0-alpha01\AndroidManifest.xml:23:9-27:43
+139            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+139-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5bb977e991c9880c023e1a358f05eaf5\jetified-lifecycle-process-2.2.0-alpha01\AndroidManifest.xml:24:13-79
+140            android:authorities="com.example.android.devbyteviewer.lifecycle-process"
+140-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5bb977e991c9880c023e1a358f05eaf5\jetified-lifecycle-process-2.2.0-alpha01\AndroidManifest.xml:25:13-69
+141            android:exported="false"
+141-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5bb977e991c9880c023e1a358f05eaf5\jetified-lifecycle-process-2.2.0-alpha01\AndroidManifest.xml:26:13-37
+142            android:multiprocess="true" />
+142-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] C:\Users\kaust\.gradle\caches\transforms-2\files-2.1\5bb977e991c9880c023e1a358f05eaf5\jetified-lifecycle-process-2.2.0-alpha01\AndroidManifest.xml:27:13-40
+143    </application>
+144
+145</manifest>
